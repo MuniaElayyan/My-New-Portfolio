@@ -991,6 +991,31 @@ width:100%;
 flex-direction:column;
 gap:0;
 }
+
+.navbar{
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:20px;
+padding:20px 0;
+}
+
+.logo{
+margin-bottom:5px;
+}
+
+.nav-links{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.linkedin-btn{
+margin-top:5px;
+}
 }
 
 @media(max-width:500px){
