@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Munia Elayyan | Frontend Developer</title>
-<link rel="icon" href="0.png">
+<link rel="icon" href="assets/images/favicon/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -18,18 +18,24 @@
 <nav class="navbar">
 <div class="logo">Munia</div>
 
-<ul class="nav-links">
+<ul class="nav-links" id="navLinks">
 <li><a href="#">Home</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#skills">Skills</a></li>
 <li><a href="#achievements">Achievements</a></li>
 <li><a href="#certificates">Certificates</a></li>
+<li class="nav-contact-mobile"><a href="#contact">Contact</a></li>
 </ul>
 <a href="#contact" class="linkedin-btn">
 <i class="fa-solid fa-envelope"></i>
 Contact
 </a>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+<span></span>
+<span></span>
+<span></span>
+</button>
 </nav>
 </header>
 
@@ -50,19 +56,19 @@ Open to Front-End Internship & Junior Developer Opportunities
 
 <div class="buttons">
 <a href="#projects">View Projects</a>
-<a href="Resume.pdf" download>Download Resume</a>
+<a href="assets/docs/Munia-Elayyan-Resume.pdf" download>Download Resume</a>
 </div>
 
 <div class="socials">
-<a href="https://github.com/MuniaElayyan" target="_blank">
+<a href="https://github.com/MuniaElayyan" target="_blank" rel="noopener">
 <i class="fab fa-github"></i>
 </a>
 
-<a href="https://www.linkedin.com/in/muniaelayyan/" target="_blank">
+<a href="https://www.linkedin.com/in/muniaelayyan/" target="_blank" rel="noopener">
 <i class="fab fa-linkedin"></i>
 </a>
 
-<a href="muniaelayyan2024@gmail.com" target="_blank">
+<a href="mailto:muniaelayyan2024@gmail.com" target="_blank" rel="noopener">
 <i class="fa-solid fa-envelope"></i>
 </a>
 
@@ -75,7 +81,7 @@ Palestine
 
 <div class="hero-image">
 <div class="frame"></div>
-<img src="1.jpg" alt="Munia Profile">
+<img src="assets/images/hero/munia-hero.jpg" alt="Munia Profile">
 <div class="image-card">
 Munia Elayyan
 <br>
@@ -90,7 +96,7 @@ Munia Elayyan
 <div class="about-container">
 <div class="about-image">
 <div class="about-frame"></div>
-<img src="3.jpg" alt="Munia">
+<img src="assets/images/about/munia-about.jpg" alt="Munia">
 </div>
 
 <div class="about-card">
@@ -136,6 +142,18 @@ combine visual appeal with a smooth user experience.
 <h3>JavaScript</h3>
 </div>
 <div class="skill-card">
+<i class="fa-solid fa-code"></i>
+<h3>TypeScript</h3>
+</div>
+<div class="skill-card">
+<i class="fa-brands fa-bootstrap"></i>
+<h3>Bootstrap</h3>
+</div>
+<div class="skill-card">
+<i class="fa-solid fa-wind"></i>
+<h3>Tailwind CSS</h3>
+</div>
+<div class="skill-card">
 <i class="fa-solid fa-mobile-screen"></i>
 <h3>Responsive Design</h3>
 </div>
@@ -165,125 +183,23 @@ combine visual appeal with a smooth user experience.
 <!-- ===== Projects Section ======== -->
 <section class="projects" id="projects">
 <h2 class="section-title">My Projects</h2>
-<div class="projects-container">
 
-<div class="project-card">
-<img src="sh.png" alt="She Moda Project">
-<div class="project-content">
-<h3>She Moda Shop</h3>
-<p>
-A modern fashion shopping website with responsive design
-and clean user interface.
-</p>
-<div class="project-tech">
-<span>HTML</span>
-<span>CSS</span>
-<span>JavaScript</span>
-</div>
-<a href="https://github.com/MuniaElayyan/She-Moda-Shop" class="project-btn">
-<i class="fa-brands fa-github"></i>
-View on GitHub
-</a>
-</div>
+<div class="project-carousel">
+<button class="project-arrow project-arrow-left" id="projectPrev" aria-label="Previous project">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
+
+<div class="project-viewport" id="projectViewport">
+<!-- project cards injected by script.js -->
 </div>
 
-<div class="project-card">
-<img src="ha.png" alt="Happy Birthday Project">
-<div class="project-content">
-<h3>Happy Birthday Website</h3>
-<p>
-A creative interactive birthday webpage designed
-with animations and attractive UI.
-</p>
-<div class="project-tech">
-<span>HTML</span>
-<span>CSS</span>
-<span>JavaScript</span>
-</div>
-<a href="https://github.com/MuniaElayyan/Happy-Birthday-" class="project-btn">
-<i class="fa-brands fa-github"></i>
-View on GitHub
-</a>
-</div>
+<button class="project-arrow project-arrow-right" id="projectNext" aria-label="Next project">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
 </div>
 
-<div class="project-card">
-<img src="to.png" alt="To Do List Project">
-<div class="project-content">
-<h3>To Do List</h3>
-<p>
-A task management application for organizing
-daily activities.
-</p>
-<div class="project-tech">
-<span>HTML</span>
-<span>CSS</span>
-<span>JavaScript</span>
-</div>
-<a href="https://github.com/MuniaElayyan/To-Do-List" class="project-btn">
-<i class="fa-brands fa-github"></i>
-View on GitHub
-</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="sho.png" alt="Shopping Cart Project">
-<div class="project-content">
-<h3>Shopping Cart Application</h3>
-<p>
-A JavaScript shopping cart application using
-objects, arrays and dynamic interactions.
-</p>
-<div class="project-tech">
-<span>HTML</span>
-<span>CSS</span>
-<span>JavaScript</span>
-</div>
-<a href="https://github.com/MuniaElayyan/Shopping-Cart-application" class="project-btn">
-<i class="fa-brands fa-github"></i>
-View on GitHub
-</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="go.png" alt="Google Project">
-<div class="project-content">
-<h3>Google Clone</h3>
-<p>
-A Google homepage clone created to practice
-HTML and CSS layout techniques.
-</p>
-<div class="project-tech">
-<span>HTML</span>
-<span>CSS</span>
-</div>
-<a href="https://github.com/MuniaElayyan/Google-project" class="project-btn">
-<i class="fa-brands fa-github"></i>
-View on GitHub
-</a>
-</div>
-</div>
-
-<div class="project-card">
-<img src="po.png" alt="Portfolio Project">
-<div class="project-content">
-<h3>Previous portfolio website</h3>
-<p>
-A personal portfolio website showcasing my
-skills and frontend development projects.
-</p>
-<div class="project-tech">
-<span>HTML</span>
-<span>CSS</span>
-</div>
-<a href="https://github.com/MuniaElayyan/Portfolio-task" class="project-btn">
-<i class="fa-brands fa-github"></i>
-View on GitHub
-</a>
-</div>
-</div>
+<div class="project-progress">
+<span id="projectCounter">1 / 9</span>
 </div>
 </section>
 
@@ -299,7 +215,7 @@ Achievements
 <div class="achievement-card">
 <div class="achievement-header">
 <div class="company-logo">
-<img src="e.png" alt="Engineering For You">
+<img src="assets/images/achievements/eng4you-logo.png" alt="Engineering For You">
 </div>
 <h3>
 Engineering For You Ambassador
@@ -325,7 +241,7 @@ Visit Instagram
 <div class="achievement-card">
 <div class="achievement-header">
 <div class="company-logo">
-<img src="b.png" alt="Binx Tech">
+<img src="assets/images/achievements/binxtech-logo.png" alt="Binx Tech">
 </div>
 <h3>
 400-Hour Front-End Training
@@ -350,110 +266,23 @@ Visit Instagram
 <h2 class="section-title">
 Certificates
 </h2>
-<div class="certificate-table-wrapper">
-<table class="certificate-table">
-<thead>
-<tr>
-<th>
-Certificate
-</th>
-<th>
-Organization
-</th>
-<th>
-Date
-</th>
-<th>
-Preview
-</th>
-</tr>
-</thead>
 
-<tbody>
-<tr>
-<td>
-Intro to Programming
-</td>
-<td>
-Udacity
-</td>
-<td>
-2026
-</td>
-<td>
-<a href="Udacity.pdf" target="_blank" class="certificate-btn">
-View Certificate
-</a>
-</td>
-</tr>
+<div class="cert-carousel">
+<button class="cert-arrow cert-arrow-left" id="certPrev" aria-label="Previous certificate">
+<i class="fa-solid fa-chevron-left"></i>
+</button>
 
-<tr>
-<td>
-One Million AI Prompters
-</td>
-<td>
-1 Million Prompters - dub.ai
-</td>
-<td>
-2026
-</td>
-<td>
-<a href="1 Million.pdf" target="_blank" class="certificate-btn">
-View Certificate
-</a>
-</td>
-</tr>
+<div class="cert-viewport" id="certViewport">
+<!-- cert cards injected by script.js -->
+</div>
 
-<tr>
-<td>
-AI Foundations & MVP Bootcamp
-</td>
-<td>
-Binx Tech
-</td>
-<td>
-2026
-</td>
-<td>
-<a href="Binx Tech.pdf" target="_blank" class="certificate-btn">
-View Certificate
-</a>
-</td>
-</tr>
+<button class="cert-arrow cert-arrow-right" id="certNext" aria-label="Next certificate">
+<i class="fa-solid fa-chevron-right"></i>
+</button>
+</div>
 
-<tr>
-<td>
-Artificial Intelligence & Vibe Coding Workshop
-</td>
-<td>
-Flasha Academy
-</td>
-<td>
-2026
-</td>
-<td>
-<a href="Flasha.pdf" target="_blank" class="certificate-btn">
-View Certificate
-</a>
-</td>
-</tr>
-
-<tr>
-<td>
-Computer Vision Workshop</td>
-<td>
-Qafzah Tech</td>
-<td>
-2026
-</td>
-<td>
-<a href="Qafza.pdf" target="_blank" class="certificate-btn">
-View Certificate
-</a>
-</td>
-</tr>
-</tbody>
-</table>
+<div class="cert-progress">
+<span id="certCounter">1 / 33</span>
 </div>
 </section>
 
@@ -563,31 +392,28 @@ During our projects, she demonstrated excellent teamwork and strong commitment
 
 <!-- Contact Form -->
 <div class="contact-form">
-<form>
+<form id="contactForm" action="https://formsubmit.co/muniaelayyan2024@gmail.com" method="POST">
 <fieldset>
-<div class="input-row">
-<label for="first-name">First Name</label>
-<input id="first-name" type="text" placeholder="First Name" required>
-<label for="last-name">Last Name</label>
-<input type="text" placeholder="Last Name">
-</div>
+<!-- FormSubmit configuration (no backend needed) -->
+<input type="hidden" name="_subject" value="New message from your portfolio website">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<input type="text" name="_honey" style="display:none">
 
-<label for="phone">Phone Number</label>
-<input type="tel" placeholder="Phone Number">
+<label for="full-name">Name</label>
+<input id="full-name" name="Name" type="text" placeholder="Your Name" required>
 
-<select>
-<label for="gender">Gender</label>
-<option>Select Gender</option>
-<option>Male</option>
-<option>Female</option>
-</select>
+<label for="email">Email</label>
+<input id="email" name="Email" type="email" placeholder="your.email@example.com" required>
 
 <label for="message">Message</label>
-<textarea id="message" placeholder="Write your message..." required></textarea>
+<textarea id="message" name="Message" placeholder="Write your message..." required></textarea>
 
 <button type="submit">Send Message
 <i class="fa-solid fa-paper-plane"></i>
 </button>
+
+<p class="form-note" id="formNote"></p>
 </fieldset>
 </form>
 </div>
@@ -599,6 +425,18 @@ During our projects, she demonstrated excellent teamwork and strong commitment
 <footer class="footer">
 <div class="footer-logo">
 Munia Elayyan
+</div>
+
+<div class="footer-socials">
+<a href="https://github.com/MuniaElayyan" target="_blank" rel="noopener" aria-label="GitHub">
+<i class="fab fa-github"></i>
+</a>
+<a href="https://www.linkedin.com/in/muniaelayyan/" target="_blank" rel="noopener" aria-label="LinkedIn">
+<i class="fab fa-linkedin"></i>
+</a>
+<a href="mailto:muniaelayyan2024@gmail.com" target="_blank" rel="noopener" aria-label="Email">
+<i class="fa-solid fa-envelope"></i>
+</a>
 </div>
 
 <p>© 2026 Munia Elayyan.</p>
@@ -615,5 +453,7 @@ Munia Elayyan
 </ul>
 </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
