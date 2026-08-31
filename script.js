@@ -502,3 +502,54 @@ const certificatesData = [
     }
   });
 })();
+
+
+/* ======================================================
+   Custom Cursor
+====================================================== */
+(function initCustomCursor() {
+// Custom cursor: the small point follows immediately,
+  // while the outer ring follows with a soft, elegant delay.
+  if (window.matchMedia("(pointer:fine)").matches) {
+    const point = document.createElement("div");
+    const ring = document.createElement("div");
+
+    point.className = "cursor-point";
+    ring.className = "cursor-ring";
+    document.body.append(point, ring);
+    document.documentElement.classList.add("custom-cursor");
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let ringX = mouseX;
+    let ringY = mouseY;
+
+    window.addEventListener("mousemove", (event) => {
+      mouseX = event.clientX;
+      mouseY = event.clientY;
+      point.style.left = `${mouseX}px`;
+      point.style.top = `${mouseY}px`;
+    });
+
+    const followRing = () => {
+      ringX += (mouseX - ringX) * 0.13;
+      ringY += (mouseY - ringY) * 0.13;
+      ring.style.left = `${ringX}px`;
+      ring.style.top = `${ringY}px`;
+      requestAnimationFrame(followRing);
+    };
+    followRing();
+
+    document.addEventListener("mouseover", (event) => {
+      if (event.target.closest("a, button, input, textarea, select, .project-card, .certificate-card")) {
+        document.body.classList.add("cursor-hover");
+      }
+    });
+
+    document.addEventListener("mouseout", (event) => {
+      if (event.target.closest("a, button, input, textarea, select, .project-card, .certificate-card")) {
+        document.body.classList.remove("cursor-hover");
+      }
+    });
+  }
+})();
