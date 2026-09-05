@@ -40,6 +40,12 @@
 ====================================================== */
 const projectsData = [
   {
+    name: "Glowrie Beauty",
+    description: "A modern beauty & cosmetics e-commerce store featuring a curated product catalog, shopping cart, and a bold, editorial-style shopping experience.",
+    image: "assets/images/projects/00-glowrie-beauty-store.png",
+    url: "https://glowrie-beauty-unhurried.onrender.com"
+  },
+  {
     name: "Al-Nabdh Specialized Hospital",
     description: "A specialized cardiology hospital website with service pages, a medical staff directory, and a dedicated staff login portal.",
     image: "assets/images/projects/01-al-nabdh-hospital.jpg",
@@ -92,6 +98,12 @@ const projectsData = [
     description: "A cozy productivity & to-do app that tracks daily tasks alongside a mood check-in.",
     image: "assets/images/projects/09-luma-todo.jpg",
     url: "https://muniaelayyan.github.io/luma-todo/"
+  },
+  {
+    name: "Code Quest Arena",
+    description: "An interactive coding quiz platform with six subject arenas, timed 15-second questions, and a live leaderboard ranked by speed and score.",
+    image: "assets/images/projects/10-code-quest-arena.png",
+    url: "https://quiz-app3-6rj6.onrender.com/"
   },
 ];
 
@@ -398,6 +410,13 @@ const certificatesData = [
     date: "7 Aug 2026",
     image: "assets/certificates/images/33-flasha-mobile-app-intro.jpg",
     file: "assets/certificates/images/33-flasha-mobile-app-intro.jpg"
+  },
+  {
+    title: "AI Power Lab",
+    org: "Flasha Academy",
+    date: "28 Aug 2026",
+    image: "assets/certificates/images/34-flasha-ai-power-lab.jpeg",
+    file: "assets/certificates/images/34-flasha-ai-power-lab.jpeg"
   },
 ];
 
