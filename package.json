@@ -1,0 +1,12 @@
+{
+  "name": "my-new-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "serve .",
+    "dev": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
